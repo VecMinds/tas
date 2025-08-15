@@ -1,0 +1,6 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Point crawlers to the sitemap for better indexing
+Sitemap: https://www.theattention.social/sitemap.xml
