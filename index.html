@@ -13,6 +13,7 @@
     <meta property="og:url" content="https://www.theattention.social/">
     <meta property="og:type" content="website">
 
+    <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ATTENTION | Expert Video Editing for Attention-Driving Content">
     <meta name="twitter:description" content="Expert video editing services...">
@@ -22,7 +23,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-        
+    
+    <!-- Structured Data -->
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -89,6 +91,7 @@
         }
     </script>
 
+    <!-- Styles and other Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -217,8 +220,7 @@
             border-radius: 0.5rem;
             aspect-ratio: 9 / 16;
         }
-        
-        .proof-image-container img{
+        .proof-image-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -235,6 +237,36 @@
             border-radius: 9999px;
             font-size: 0.875rem;
             font-weight: 600;
+        }
+        /* Responsive Video Embed 16:9 */
+        .video-container-16-9 {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem;
+        }
+        .video-container-16-9 iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Responsive Video Embed 9:16 */
+        .video-container-9-16 {
+            position: relative;
+            padding-bottom: 177.77%; /* 9:16 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem;
+        }
+        .video-container-9-16 iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -335,10 +367,22 @@
                             <span class="accordion-icon text-2xl font-thin text-gray-500">+</span>
                         </button>
                         <div class="accordion-content bg-black">
-                            <div class="p-8 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                                <div class="card-bg p-6 rounded-xl border border-weak h-full flex flex-col"><h3 class="text-xl font-bold mb-2">Starter</h3><p class="text-gray-400 mb-6">For getting started.</p><p class="text-3xl font-extrabold mb-6">$1,500<span class="text-base font-medium text-gray-500">/mo</span></p><ul class="space-y-3 text-gray-300 mb-8 flex-grow"><li class="flex items-center"><span class="text-gray-500 mr-3">✓</span> 15 Short-Form Videos</li><li class="flex items-center"><span class="text-gray-500 mr-3">✓</span> 48-72 Hour Turnaround</li></ul><a href="#cta" class="w-full mt-auto text-center border-2 font-bold py-3 px-6 rounded-full btn btn-secondary">Choose Starter</a></div>
-                                <div class="card-bg p-6 rounded-xl border-2 border-accent relative h-full flex flex-col"><span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-accent text-black text-xs font-bold px-4 py-1 rounded-full whitespace-nowrap">MOST POPULAR</span><h3 class="text-xl font-bold mb-2">Growth</h3><p class="text-gray-400 mb-6">For scaling content.</p><p class="text-3xl font-extrabold mb-6">$2,500<span class="text-base font-medium text-gray-500">/mo</span></p><ul class="space-y-3 text-gray-300 mb-8 flex-grow"><li class="flex items-center"><span class="text-white mr-3">✓</span> 30 Short-Form Videos</li><li class="flex items-center"><span class="text-white mr-3">✓</span> 24-48 Hour Turnaround</li><li class="flex items-center"><span class="text-white mr-3">✓</span> Thumbnail Design (5)</li></ul><a href="#cta" class="w-full mt-auto text-center bg-accent font-bold py-3 px-6 rounded-full btn btn-primary">Choose Growth</a></div>
-                                <div class="card-bg p-6 rounded-xl border border-weak h-full flex flex-col"><h3 class="text-xl font-bold mb-2">Domination</h3><p class="text-gray-400 mb-6">For owning your niche.</p><p class="text-3xl font-extrabold mb-6">$4,500<span class="text-base font-medium text-gray-500">/mo</span></p><ul class="space-y-3 text-gray-300 mb-8 flex-grow"><li class="flex items-center"><span class="text-gray-500 mr-3">✓</span> Unlimited Short-Form</li><li class="flex items-center"><span class="text-gray-500 mr-3">✓</span> Same Day Turnaround</li></ul><a href="#cta" class="w-full mt-auto text-center border-2 font-bold py-3 px-6 rounded-full btn btn-secondary">Choose Domination</a></div>
+                            <div class="p-8">
+                                <div class="text-center">
+                                    <p class="text-gray-400 mb-6">Custom packages are available for short-form video editing. Let's build a plan that fits your content strategy.</p>
+                                    <a href="#cta" class="inline-block bg-accent font-bold py-3 px-6 rounded-full btn btn-primary">Pricing →</a>
+                                </div>
+                                <!-- <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                                    <div class="video-container-9-16">
+                                        <iframe src="https://www.youtube.com/embed/eFy8tepEByw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="video-container-9-16">
+                                        <iframe src="https://www.youtube.com/embed/hsHbSkpOu2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                     <div class="video-container-9-16">
+                                        <iframe src="https://www.youtube.com/embed/VgTxnu4fDk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -352,10 +396,19 @@
                             <span class="accordion-icon text-2xl font-thin text-gray-500">+</span>
                         </button>
                         <div class="accordion-content bg-black">
-                            <div class="p-8 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                                <div class="card-bg p-6 rounded-xl border border-weak h-full flex flex-col"><h3 class="text-xl font-bold mb-2">Essential</h3><p class="text-gray-400 mb-6">1-2 videos per month.</p><p class="text-3xl font-extrabold mb-6">$1,800<span class="text-base font-medium text-gray-500">/mo</span></p><ul class="space-y-3 text-gray-300 mb-8 flex-grow"><li class="flex items-center"><span class="text-gray-500 mr-3">✓</span> Up to 2 Videos</li><li class="flex items-center"><span class="text-gray-500 mr-3">✓</span> 3-5 Day Turnaround</li></ul><a href="#cta" class="w-full mt-auto text-center border-2 font-bold py-3 px-6 rounded-full btn btn-secondary">Choose Essential</a></div>
-                                <div class="card-bg p-6 rounded-xl border-2 border-accent relative h-full flex flex-col"><span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-accent text-black text-xs font-bold px-4 py-1 rounded-full whitespace-nowrap">MOST POPULAR</span><h3 class="text-xl font-bold mb-2">Pro</h3><p class="text-gray-400 mb-6">Weekly video output.</p><p class="text-3xl font-extrabold mb-6">$3,200<span class="text-base font-medium text-gray-500">/mo</span></p><ul class="space-y-3 text-gray-300 mb-8 flex-grow"><li class="flex items-center"><span class="text-white mr-3">✓</span> Up to 4 Videos</li><li class="flex items-center"><span class="text-white mr-3">✓</span> Priority Turnaround</li><li class="flex items-center"><span class="text-white mr-3">✓</span> Advanced Graphics</li></ul><a href="#cta" class="w-full mt-auto text-center bg-accent font-bold py-3 px-6 rounded-full btn btn-primary">Choose Pro</a></div>
-                                <div class="card-bg p-6 rounded-xl border border-weak h-full flex flex-col"><h3 class="text-xl font-bold mb-2">Studio</h3><p class="text-gray-400 mb-6">High-volume production.</p><p class="text-3xl font-extrabold mb-6">$5,500<span class="text-base font-medium text-gray-500">/mo</span></p><ul class="space-y-3 text-gray-300 mb-8 flex-grow"><li class="flex items-center"><span class="text-gray-500 mr-3">✓</span> Up to 8 Videos</li><li class="flex items-center"><span class="text-gray-500 mr-3">✓</span> Dedicated Producer</li></ul><a href="#cta" class="w-full mt-auto text-center border-2 font-bold py-3 px-6 rounded-full btn btn-secondary">Choose Studio</a></div>
+                            <div class="p-8">
+                                <div class="text-center">
+                                    <p class="text-gray-400 mb-6">Custom packages are available for long-form video editing. Let's discuss your project and goals.</p>
+                                    <a href="#cta" class="inline-block bg-accent font-bold py-3 px-6 rounded-full btn btn-primary">Pricing →</a>
+                                </div>
+                                <!-- <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <div class="video-container-16-9">
+                                        <iframe src="https://www.youtube.com/embed/JdT78t1Offo?si=u4qpmst-GUfL1CEC&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="video-container-16-9">
+                                        <iframe src="https://www.youtube.com/embed/fGKNUvivvnc?si=XRyrWKb_TDi02doZ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -371,7 +424,7 @@
                         <div class="accordion-content bg-black">
                             <div class="p-8 text-center">
                                 <p class="text-gray-400 mb-6">Custom packages are available for content repurposing. Let's build a plan that fits your needs.</p>
-                                <a href="#cta" class="inline-block bg-accent font-bold py-3 px-6 rounded-full btn btn-primary">Book Your Call</a>
+                                <a href="#cta" class="inline-block bg-accent font-bold py-3 px-6 rounded-full btn btn-primary">Pricing →</a>
                             </div>
                         </div>
                     </div>
@@ -387,7 +440,7 @@
                         <div class="accordion-content bg-black">
                             <div class="p-8 text-center">
                                 <p class="text-gray-400 mb-6">Pricing is project-based for explainer videos. Let's discuss your script and vision.</p>
-                                <a href="#cta" class="inline-block bg-accent font-bold py-3 px-6 rounded-full btn btn-primary">Book Your Call</a>
+                                <a href="#cta" class="inline-block bg-accent font-bold py-3 px-6 rounded-full btn btn-primary">Pricing →</a>
                             </div>
                         </div>
                     </div>
@@ -403,7 +456,7 @@
                         <div class="accordion-content bg-black">
                            <div class="p-8 text-center">
                                 <p class="text-gray-400 mb-6">Our VSL & Ad packages are built for performance. Let's create a strategy to maximize your ROI.</p>
-                                <a href="#cta" class="inline-block bg-accent font-bold py-3 px-6 rounded-full btn btn-primary">Book Your Call</a>
+                                <a href="#cta" class="inline-block bg-accent font-bold py-3 px-6 rounded-full btn btn-primary">Pricing →</a>
                            </div>
                         </div>
                     </div>
@@ -507,7 +560,10 @@
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
             </div>
-            <p>&copy; 2024 ATTENTION. All Rights Reserved.</p>
+            <div class="space-y-4">
+                <a href="mailto:info@attention.social" class="text-gray-400 hover:text-white transition-colors">info [at] attention [dot] social</a>
+                <p>&copy; 2024 ATTENTION. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
