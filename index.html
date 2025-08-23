@@ -214,29 +214,20 @@
             backdrop-filter: blur(10px);
         }
         /* Proof Image Styles */
-        .proof-image-container {
+        .proof-video-container {
             position: relative;
             overflow: hidden;
             border-radius: 0.5rem;
-            aspect-ratio: 9 / 16;
-        }
-        .proof-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-        }
-        .proof-image-container:hover img {
-            transform: scale(1.1);
         }
         .proof-label {
             position: absolute;
             top: 0.75rem;
-            right: 0.75rem;
+            left: 0.75rem;
             padding: 0.25rem 0.75rem;
             border-radius: 9999px;
             font-size: 0.875rem;
             font-weight: 600;
+            z-index: 10;
         }
         /* Responsive Video Embed 16:9 */
         .video-container-16-9 {
@@ -493,30 +484,55 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Before/After Example 1 -->
                     <div class="space-y-4">
-                        <h3 class="text-xl font-bold text-center">Podcast to Viral Clip</h3>
+                        <h3 class="text-xl font-bold text-center">Long-Form to Short Clip</h3>
                         <div class="grid grid-cols-2 gap-4">
-                            <a href="#" class="proof-image-container">
-                                <img src="img/image-1-b.png" alt="Before editing">
+                            <div class="proof-video-container">
                                 <div class="proof-label bg-gray-800 text-gray-300">Before</div>
-                            </a>
-                            <a href="#" class="proof-image-container">
-                                <img src="img/image-1-a.png" alt="After editing">
+                                <div class="video-container-9-16">
+                                    <iframe src="https://www.youtube.com/embed/uXlWYZ022zU?si=GfGc3sCPYa_Du-LE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="proof-video-container">
                                 <div class="proof-label bg-white text-black">After</div>
-                            </a>
+                                <div class="video-container-9-16">
+                                    <iframe src="https://www.youtube.com/embed/dGoc8MtYaEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Before/After Example 2 -->
                      <div class="space-y-4">
-                        <h3 class="text-xl font-bold text-center">Raw Footage to Polished Ad</h3>
+                        <h3 class="text-xl font-bold text-center">Raw Short-Form to Polished</h3>
                         <div class="grid grid-cols-2 gap-4">
-                            <a href="#" class="proof-image-container">
-                                <img src="img/image-2-b.png" alt="Before editing">
+                            <div class="proof-video-container">
                                 <div class="proof-label bg-gray-800 text-gray-300">Before</div>
-                            </a>
-                            <a href="#" class="proof-image-container">
-                                <img src="img/image-2-a.png" alt="After editing">
+                                <div class="video-container-9-16">
+                                    <iframe src="https://www.youtube.com/embed/dGoc8MtYaEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="proof-video-container">
                                 <div class="proof-label bg-white text-black">After</div>
-                            </a>
+                                <div class="video-container-9-16">
+                                    <iframe src="https://www.youtube.com/embed/dGoc8MtYaEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 space-y-4">
+                    <h3 class="text-xl font-bold text-center">Raw Long-Form to Polished</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="proof-video-container">
+                            <div class="proof-label bg-gray-800 text-gray-300">Before</div>
+                            <div class="video-container-16-9">
+                                <iframe src="https://www.youtube.com/embed/y3yAVZk3tyA?si=AGHgDcI6IHxE7gII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="proof-video-container">
+                            <div class="proof-label bg-white text-black">After</div>
+                            <div class="video-container-16-9">
+                                <iframe src="https://www.youtube.com/embed/y3yAVZk3tyA?si=AGHgDcI6IHxE7gII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
